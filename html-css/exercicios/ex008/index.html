@@ -1,59 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formatação de Textos</title>
+    <title>Outras formatações</title>
 </head>
+
 <body>
-    <h1>Principais formatações</h1>
-        <h2>Negrito / Destaque</h2>
-            <p>NEssa frase temos um <b>termo em negrito</b> usando a tag B (não semântica).</p>
-                <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag STRONG (semântica).<p>
-        <h2>Itálico / Ênfase</h2>
+    <h1>Outras formatações</h1>
+        <h2>Código-fonte / Pré-formatação</h2>
             <p>
-                Nesta frase, temos um <i>termo em itálico</i>, usando a tag I (não semântica).
+                O comando <code>document.getElementById("Teste")</code> é escrito em linguagem JavaScript.
             </p>
+                <pre>
+                    <code>
+num = int(input('Digite um número'))
+if num % 2 == 0:
+    print(f'O número {num} é PAR')
+else:
+    print(f'O número {num} é ÍMPAR')
+print('Fim do programa')
+                    </code>
+                </pre>
+        <h2>Citações</h2>
                 <p>
-                    Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM(semântica).
+                    Como diria o pai de um amigo: <q>...o computador é um burro muito fast.</q>
                 </p>
-                    <p>
-                        Nesta frase, temos um <mark>termo em marcação</mark> usando a tag MARK (semântica).
-                    </p>
-                         <p>
-                            Nesta frase, temos um <del>termo em delete</del> usando a tag DEL (semântica).
-                        </p>
-                            <p>
-                                Nesta frase, temos um <ins>termo em insert</ins> usando a tag INS (semântica). 
-                            </p>
-                                <p>
-                                    Nesta frase, temos um texto sobreescrito H<sub>2</sub>O, usando a tag SUB (semântica.)
-                                </p>
-                                    <p>
-                                        Nesta frase, temos um texto subscrito 10<sup>10</sup>, usando a tag SUP (semântica.)
-                                    </p>
-                                        <p>
-                                            <strong><em><mark><del><ins>Que tal uma frase com tod@s as tags acima? hehehe...H<sub>2</sub>O, 10<sup>10</sup></ins></del></mark>
-                                            </em></strong> (semântica).
-                                        </p>
-                                            <p>
-                                                Que tal uma citação? <q>usando a tag Q.</q>
-                                            </p>
-                                                <p>
-                                                    <blockquote>
-                                                        Citação em bloco.
-                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus aliquam cupiditate minima, accusantium ducimus praesentium consectetur quae sunt quasi iusto fugit iure vero molestiae, rerum eveniet pariatur ad hic libero?
-                                                    </blockquote>
-                                                </p>
-                                                    <p>
-                                                        Estamos estudando <abbr title="Hyper Text Markup Language">HTML</abbr> para criar sites. (Parece tooltip)
-                                                    </p>
-                                                        <p>
-                                                            <bdo dir="rtl">Aqui temos um texto invertido</bdo>, usando a tag DBO (semântica).
-                                                        </p>
-                                                            <p>
-                                                                <bdo dir="rtl">oditrevni otxet mu somet iuqA</bdo>
-                                                            </p>
-                                                            
+        <h2>Citações completas</h2>
+                <p>
+                    Segundo, Eric Freeman & Elisabeth Robson, em seu livro Use a Cabeça! Programação em HTML5:
+                </p>
+                <blockquote cite="https://books.google.com.br/books?id=mKW6BAAAQBAJ&pg=PR3&dq=livro+html+e+css&hl=pt-BR&sa=X&ved=2ahUKEwjXnrOyyZvuAhXfH7kGHew_As8Q6wEwBHoECAgQAQ#v=onepage&q=livro%20html%20e%20css&f=false">
+                        Fizemos algumas escavações e descobrimos um código inserido em uma pa´gina HTML.
+                </blockquote>
+        <h2>Abreviações</h2>
+                <p>
+                    Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, Estou a adorar.
+                </p>
+        <h2>Texto invertido</h2>
+                <p>
+                    <bdo dir="rtl">Você está vendo um texto invertido.</bdo>
+                </p>
 </body>
+
 </html>
